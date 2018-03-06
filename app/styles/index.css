@@ -1,0 +1,64 @@
+/*-------------
+ 	General
+-------------*/
+
+html{
+	font: normal 16px sans-serif;
+	color: black;
+}
+
+/*-------------
+  Log Canvas
+-------------*/
+
+.logcavans{
+    position: absolute;
+    width:500px;
+    float:left;
+}
+
+.logtitle{
+    position: relative;
+}
+
+.btn {
+    position: relative;
+    top: -55px;
+    left: 20px;
+	color: black;
+	border-radius: 10px;
+	background-color: transparent;
+	text-align: center;
+	border: 1px solid black;
+	font-size: 18px;
+    font-size: 1.2rem;
+    margin-left:200px;
+}
+
+.log{
+    position: relative;
+    left: 5px;
+    border: 1px solid black;
+    height:700px;
+    overflow: scroll;
+}
+
+/*-------------
+Summary Canvas
+-------------*/
+
+.sumcavans{
+    width:500px;
+    margin-left: 700px;
+}
+
+.sumtitle{
+    position: relative;
+    top: 30px;
+}
+
+.pricetable{
+    position: relative;
+    top: 30px;
+    border: 1px solid black;
+}

@@ -12,7 +12,7 @@ class Summary extends Component {
       }
     
       fetchJSON(){
-        fetch('https://join.reckon.com/stock-pricing', {
+        fetch('https://cors-anywhere.herokuapp.com/'+'https://join.reckon.com/stock-pricing', {
             method: 'GET'
           }).then((Response) => Response.json())
           .then((jsonData) => {
@@ -24,7 +24,7 @@ class Summary extends Component {
       }
 
       fetchlastJSON(){
-        fetch('https://join.reckon.com/stock-pricing', {
+        fetch('https://cors-anywhere.herokuapp.com/'+'https://join.reckon.com/stock-pricing', {
             method: 'GET'
           }).then((Response) => Response.json())
           .then((jsonData) => {
@@ -36,7 +36,7 @@ class Summary extends Component {
       }
 
       fetchpreJSON(){
-        fetch('https://join.reckon.com/stock-pricing', {
+        fetch('https://cors-anywhere.herokuapp.com/'+'https://join.reckon.com/stock-pricing', {
             method: 'GET'
           }).then((Response) => Response.json())
           .then((jsonData) => {

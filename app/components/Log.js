@@ -49,8 +49,7 @@ class Log extends Component {
   }
 
   fetchJSON(){
-    fetch('https://join.reckon.com/stock-pricing', {
-        method: 'GET',
+    fetch('https://cors-anywhere.herokuapp.com/'+'https://join.reckon.com/stock-pricing', {
       }).then((Response) => Response.json())
       .then((jsonData) => {
         console.log(jsonData)

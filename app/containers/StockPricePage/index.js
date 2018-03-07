@@ -16,7 +16,7 @@ import Log from '../../components/Log';
 import Summary from '../../components/Summary';
 import '../../styles/index.css';
 
-export default class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
+export default class StockPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
       <div>

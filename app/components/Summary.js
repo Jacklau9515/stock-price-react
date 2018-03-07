@@ -58,7 +58,7 @@ class Summary extends Component {
     return (
         <div className='sumcavans'>
             <div className='sumtitle'><h1>Summary</h1></div>
-            <table className='pricetable' border="1">
+            <table className='pricetable'>
               <tr>
                   <td>Stock</td><br/><br/>
                   <td>Starting</td><br/><br/>

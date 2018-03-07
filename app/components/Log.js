@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import { clearInterval } from 'timers';
+import { clearInterval, setInterval } from 'timers';
 
-const Switch = ({value, isPaused}) => (
+/**const Switch = ({value, isPaused}) => (
     <div>
         <button className='btn' onClick={isPaused}>{value}</button>
     </div>
-);
+);**/
 
 /**const reducer = (state = 'Pause', action) => {
     switch (action.type) {
@@ -50,7 +50,7 @@ class Log extends Component {
 
   fetchJSON(){
     fetch('https://join.reckon.com/stock-pricing', {
-        method: 'GET'
+        method: 'GET',
       }).then((Response) => Response.json())
       .then((jsonData) => {
         console.log(jsonData)
@@ -66,17 +66,13 @@ class Log extends Component {
     })
   }
 
-  myStopFunction() {
-      clearInterval(this.timer);
-    }
-
   componentDidMount(){
     this.timer = setInterval(()=> this.fetchJSON(), 2000),
     this.datetime = setInterval(()=>this.currentTime(), 2000)
   }
 
   render () {
-    const pausedLog = this.props.likedText || 'Resume' 
+    const pausedLog = this.props.likedText || 'Resume'
     const resumeLog = this.props.unlikedText || 'Pause'
     return (
       <div className='logcavans'>
